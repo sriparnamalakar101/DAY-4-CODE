@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    float num;
+
+    // Input from user
+    printf("Enter a number: ");
+    scanf("%f", &num);
+
+    if (num == (int)num)
+        printf("%.2f is an integer.\n", num);
+    else
+        printf("%.2f is not an integer.\n", num);
+
+    return 0;
+}
