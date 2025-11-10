@@ -1,17 +1,23 @@
 #include <stdio.h>
 
 int main() {
-    int num;
+    int num1, num2;
 
     // Input from user
-    printf("Enter an integer: ");
-    scanf("%d", &num);
+    printf("Enter first number: ");
+    scanf("%d", &num1);
 
-    // Check even or odd
-    if (num % 2 == 0)
-        printf("%d is even.\n", num);
+    printf("Enter second number: ");
+    scanf("%d", &num2);
+
+    // Check which number is greater
+    if (num1 > num2)
+        printf("%d is greater than %d\n", num1, num2);
+    else if (num2 > num1)
+        printf("%d is greater than %d\n", num2, num1);
     else
-        printf("%d is odd.\n", num);
+        printf("Both numbers are equal.\n");
 
     return 0;
 }
+
